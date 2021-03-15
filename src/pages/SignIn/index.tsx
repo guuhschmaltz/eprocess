@@ -21,7 +21,7 @@ const SignIn: React.FC = () => {
           placeholder="Senha"
         />
         <Button type="submit">Entrar</Button>
-        <Link to="/">
+        <Link to="/forgot-password">
           Esqueceu sua senha
           <HiQuestionMarkCircle size={24} />
         </Link>
