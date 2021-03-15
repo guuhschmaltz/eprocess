@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
 export const Container = styled.div`
   height: 100vh;
@@ -15,7 +16,32 @@ export const Content = styled.div`
   background-color: #fff;
   color:#373535;
 
-  border-radius: 0.8rem;
-  padding: 1.6rem;
+  border-radius: 8px;
+  padding: 16px;
+  }
+
+  h1{
+    margin-bottom: 24px;
+  }
+
+  a {
+    font-weight: 500;
+    font-size: 12px;
+    color: #DDA927;
+    display: block;
+    margin-top: 12px;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 8px;
+    }
+
+    &:hover {
+      color: ${shade(0.2, '#DDA927')};
+    }
   }
 `;
