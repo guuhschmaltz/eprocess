@@ -4,10 +4,11 @@
   --color-grey: #565B5F;
   --color-black: #373535;
   --color-grey-light: #DDDDDE;
-  --color-background-white: #FFF;
+  --color-background-white: #ffffee;
   --color-background-grey: #565B5F;
   --color-background-yellow: #FFC32D;
-
+  --color-text-white:#ffffffe5;
+  --color-text-black:#373535;
 }
 /*
 Fontes:

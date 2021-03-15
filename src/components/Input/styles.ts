@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #232129;
+  background: #373535;
   border-radius: 10px;
   padding: 16px;
   width: 100%;
 
-  border: 2px solid #232129;
+  border: 2px solid #373535;
   color: #565b5f;
 
   display: flex;
@@ -20,7 +20,7 @@ export const Container = styled.div`
     flex: 1;
     background: transparent;
     border: 0;
-    color: #f4ede8;
+    color: #ffffffe5;
 
     &::placeholder {
       color: #666360;
