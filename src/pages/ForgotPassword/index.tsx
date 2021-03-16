@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { FiMail, FiArrowLeftCircle } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { Form } from '@unform/web';
 import { AnimationContainer, Container, Content } from './styles';
 
@@ -9,6 +9,11 @@ import Input from '../../components/Input';
 import Button from '../../components/Button';
 
 const ForgotPassword: React.FC = () => {
+  const history = useHistory();
+  const haveAnyCode = useCallback(() => {
+    history.push('/reset-password');
+  }, [history]);
+
   function handleSubmit(data: object): void {
     console.log(data);
   }
@@ -21,7 +26,7 @@ const ForgotPassword: React.FC = () => {
             <h1>Recupere sua senha</h1>
             <Input icon={FiMail} name="e-mail" placeholder="E-mail" />
             <Button type="submit">Enviar código</Button>
-            <Button>Já tenho um código</Button>
+            <Button onClick={haveAnyCode}>Já tenho um código</Button>
             <Link to="/">
               Voltar para login
               <FiArrowLeftCircle size={24} />
