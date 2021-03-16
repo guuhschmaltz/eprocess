@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { shade } from 'polished';
 
 export const Container = styled.div`
@@ -6,25 +6,59 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffc32d;
+  flex: 1;
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #EDEDEE;
-  color:#373535;
-  flex: 1;
-  margin: 0 6%;
-  max-width: 720px;
 
-  border-radius: 8px;
-  padding: 16px;
+  padding: 6%;
+  flex: 1;
+`;
+const appearFromLeft = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-250px);
   }
 
-  h1{
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
+
+export const AnimationContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  flex: 1;
+  width: 100%;
+  max-width: 720px;
+  background-color: #ededee;
+  color: #373535;
+
+  border-radius: 8px;
+
+  animation: ${appearFromLeft} 1s;
+
+  h1 {
     margin-bottom: 24px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1;
+    width: 100%;
+    max-width: 720px;
+    padding: 6%;
   }
 
   a {
