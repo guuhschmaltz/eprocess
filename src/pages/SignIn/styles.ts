@@ -38,8 +38,8 @@ export const AnimationContainer = styled.div`
   flex: 1;
   width: 100%;
   max-width: 720px;
-  background-color: #ededee;
-  color: #373535;
+  background-color: var(--color-container);
+  color: var(--color-text-black);
 
   border-radius: 8px;
 
@@ -64,7 +64,7 @@ export const AnimationContainer = styled.div`
   a {
     font-weight: 500;
     font-size: 12px;
-    color: #373535;
+    color: var(--color-text-black);
     display: block;
     margin-top: 12px;
     text-decoration: none;
