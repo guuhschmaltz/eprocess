@@ -27,8 +27,8 @@ export const Container = styled.div<ContainerProps>`
   ${props =>
     props.isErrored &&
     css`
-      border-color: #c53030;
-      color: #c53030;
+      border-color: var(--color-orange);
+      color: var(--color-orange);
     `}
 
   ${props =>
@@ -44,19 +44,27 @@ export const Container = styled.div<ContainerProps>`
       color: var(--color-yellow-dark);
     `}
 
+
+
   input {
     flex: 1;
     background: transparent;
     border: 0;
-    color: #ffffffe5;
+    color: var(--color-text-white);
 
     &::placeholder {
-      color: #666360;
+      color: var(--color-text-grey);
     }
   }
 
   svg {
-    margin-right: 16px;
+    display: none;
+  }
+  @media only screen and (min-width: 425px) {
+    svg {
+      display: flex;
+      margin-right: 16px;
+    }
   }
 `;
 
@@ -69,11 +77,12 @@ export const Error = styled(Tooltip)`
   }
 
   span {
-    background: #c53030;
-    color: #fff;
+    text-align: center;
+    background: var(--color-orange);
+    color: var(--color-text-white);
 
     &::before {
-      border-color: #c53030 transparent;
+      border-color: var(--color-orange) transparent;
     }
   }
 `;

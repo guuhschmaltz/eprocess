@@ -15,7 +15,7 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 6%;
+  padding: 12%;
   flex: 1;
 `;
 const appearFromLeft = keyframes`
