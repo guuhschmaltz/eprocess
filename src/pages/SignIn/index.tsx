@@ -3,7 +3,7 @@ import { FiMail, FiLock } from 'react-icons/fi';
 import { HiQuestionMarkCircle } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import { Form } from '@unform/web';
-import { AnimationContainer, Container, Content } from './styles';
+import { AnimationContainer, Container, Content, Background } from './styles';
 
 import ImgLogo from '../../components/ImgLogo';
 import Input from '../../components/Input';
@@ -15,6 +15,7 @@ const SignIn: React.FC = () => {
   }
   return (
     <Container>
+      <Background />
       <Content>
         <AnimationContainer>
           <ImgLogo />

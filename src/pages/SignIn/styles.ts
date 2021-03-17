@@ -1,26 +1,27 @@
 import styled, { keyframes } from 'styled-components';
 import { shade } from 'polished';
 
+import fadeBackground from '../../assets/fade-background.png';
+
 export const Container = styled.div`
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex: 1;
+  align-items: stretch;
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  justify-content: center;
   padding: 6%;
   flex: 1;
 `;
 const appearFromLeft = keyframes`
   from {
     opacity: 0;
-    transform: translateX(-250px);
+    transform: translateX(-50px);
   }
 
   to {
@@ -34,14 +35,10 @@ export const AnimationContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  flex: 1;
-  width: 100%;
-  max-width: 720px;
   background-color: var(--color-container);
   color: var(--color-text-black);
-
   border-radius: 8px;
+  width: 100%;
 
   animation: ${appearFromLeft} 1s;
 
@@ -80,5 +77,16 @@ export const AnimationContainer = styled.div`
     &:hover {
       color: ${shade(0.2, '#373535')};
     }
+  }
+`;
+
+export const Background = styled.div`
+  display: none;
+
+  @media only screen and (min-width: 1024px) {
+    display: flex;
+    flex: 1;
+    background: url(${fadeBackground}) no-repeat center;
+    background-size: cover;
   }
 `;

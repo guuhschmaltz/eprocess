@@ -2,7 +2,7 @@ import React from 'react';
 import { FiArrowLeftCircle, FiInfo, FiLock } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { Form } from '@unform/web';
-import { AnimationContainer, Container, Content } from './styles';
+import { AnimationContainer, Container, Content, Background } from './styles';
 
 import ImgLogo from '../../components/ImgLogo';
 import Input from '../../components/Input';
@@ -15,6 +15,7 @@ const ResetPassword: React.FC = () => {
 
   return (
     <Container>
+      <Background />
       <Content>
         <AnimationContainer>
           <ImgLogo />
