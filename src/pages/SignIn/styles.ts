@@ -60,10 +60,9 @@ export const AnimationContainer = styled.div`
 
   a {
     font-weight: 500;
-    font-size: 12px;
     color: var(--color-text-black);
     display: block;
-    margin-top: 12px;
+    margin-top: 0.8rem;
     text-decoration: none;
     transition: color 0.2s;
 

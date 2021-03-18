@@ -67,7 +67,7 @@ const ForgotPassword: React.FC = () => {
             <Button onClick={haveAnyCode}>Já tenho um código</Button>
             <Link to="/">
               Voltar para login
-              <FiArrowLeftCircle size={24} />
+              <FiArrowLeftCircle size={20} />
             </Link>
           </Form>
         </AnimationContainer>

@@ -7,11 +7,10 @@ export const Container = styled.div`
   @media only screen and (min-width: 768px) {
     display: flex;
     span {
-      width: 160px;
+      width: 7.5rem;
       background: var(--color-orange);
-      padding: 8px;
+      padding: 0.6rem;
       border-radius: 4px;
-      font-size: 14px;
       font-weight: 500;
       opacity: 0;
       transition: opacity 0.4s;

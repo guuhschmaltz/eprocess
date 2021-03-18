@@ -10,12 +10,12 @@ interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
   background: var(--color-black);
-  border-radius: 10px;
-  padding: 16px;
+  border-radius: 4px;
+  padding: 0.6rem;
   width: 100%;
 
   border: 2px solid var(--color-black);
-  color: #565b5f;
+  color: var(--color-grey);
 
   display: flex;
   align-items: center;
@@ -63,14 +63,14 @@ export const Container = styled.div<ContainerProps>`
   @media only screen and (min-width: 425px) {
     svg {
       display: flex;
-      margin-right: 16px;
+      margin-right: 0.6rem;
     }
   }
 `;
 
 export const Error = styled(Tooltip)`
-  height: 20px;
-  margin-left: 16px;
+  height: 1.2rem;
+  margin-left: 1.6rem;
 
   svg {
     margin: 0;

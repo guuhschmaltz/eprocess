@@ -67,7 +67,7 @@ const SignIn: React.FC = () => {
             <Button type="submit">Entrar</Button>
             <Link to="/forgot-password">
               Esqueceu sua senha
-              <HiQuestionMarkCircle size={24} />
+              <HiQuestionMarkCircle size={20} />
             </Link>
           </Form>
         </AnimationContainer>

@@ -82,7 +82,7 @@ const ResetPassword: React.FC = () => {
             <Button type="submit">Redefinir Senha</Button>
             <Link to="/forgot-password">
               Voltar para recuperar senha
-              <FiArrowLeftCircle size={24} />
+              <FiArrowLeftCircle size={20} />
             </Link>
           </Form>
         </AnimationContainer>

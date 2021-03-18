@@ -18,10 +18,10 @@ export const Content = styled.div`
   padding: 12%;
   flex: 1;
 `;
-const appearFromLeft = keyframes`
+const appearFromRight = keyframes`
   from {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(50px);
   }
 
   to {
@@ -40,7 +40,7 @@ export const AnimationContainer = styled.div`
   border-radius: 8px;
   width: 100%;
 
-  animation: ${appearFromLeft} 1s;
+  animation: ${appearFromRight} 1s;
 
   h1 {
     margin-bottom: 24px;
@@ -60,10 +60,9 @@ export const AnimationContainer = styled.div`
 
   a {
     font-weight: 500;
-    font-size: 12px;
     color: var(--color-text-black);
     display: block;
-    margin-top: 12px;
+    margin-top: 0.8rem;
     text-decoration: none;
     transition: color 0.2s;
 

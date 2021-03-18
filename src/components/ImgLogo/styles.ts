@@ -7,3 +7,4 @@ export const Container = styled.div`
     max-width: 125px;
   }
 `;
+
