@@ -1,6 +1,6 @@
 import React, { ImgHTMLAttributes } from 'react';
 
-import imgLogo from '../../assets/logo-eprogress.png';
+import imgLogo from '../../assets/logofull-eprogress-black.png';
 import { Container } from './styles';
 
 type ImageProps = ImgHTMLAttributes<HTMLImageElement>;

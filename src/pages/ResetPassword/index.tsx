@@ -63,8 +63,8 @@ const ResetPassword: React.FC = () => {
       <Background />
       <Content>
         <AnimationContainer>
-          <ImgLogo />
           <Form ref={formRef} onSubmit={handleSubmit}>
+          <ImgLogo />
             <h1>Redefina sua senha</h1>
             <Input icon={FiInfo} name="code" placeholder="Código" />
             <Input

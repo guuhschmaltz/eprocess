@@ -54,8 +54,8 @@ const SignIn: React.FC = () => {
       <Background />
       <Content>
         <AnimationContainer>
-          <ImgLogo />
           <Form ref={formRef} onSubmit={handleSubmit}>
+          <ImgLogo />
             <h1>Faça seu logon</h1>
             <Input icon={FiMail} name="email" placeholder="E-mail" />
             <Input
